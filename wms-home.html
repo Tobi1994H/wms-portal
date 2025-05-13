@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WMS Startseite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #002EFF, #87CEFA);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .tile {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+    .tile:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .tile h2 {
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+    }
+    .tile i {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Willkommen im WMS-Informationsportal</h1>
+    <p>Alle Informationen, Prozesse und Hilfestellungen rund um unser firmeneigenes Warenwirtschaftssystem</p>
+  </header>
+
+  <main class="container">
+    <a href="/WMS/Wareneingang" class="tile"><i class="fas fa-arrow-down"></i><h2>Wareneingang</h2></a>
+    <a href="/WMS/Warenausgang" class="tile"><i class="fas fa-arrow-up"></i><h2>Warenausgang</h2></a>
+    <a href="/WMS/Kommissionierung" class="tile"><i class="fas fa-dolly"></i><h2>Kommissionierung</h2></a>
+    <a href="/WMS/Mobile-App" class="tile"><i class="fas fa-mobile-alt"></i><h2>Mobile App</h2></a>
+    <a href="/WMS/Wiki" class="tile"><i class="fas fa-book"></i><h2>Wiki</h2></a>
+    <a href="/WMS/FAQ" class="tile"><i class="fas fa-question-circle"></i><h2>FAQs</h2></a>
+    <a href="/WMS/Vorlagen" class="tile"><i class="fas fa-file-alt"></i><h2>Vorlagen</h2></a>
+    <a href="/WMS/Schulung" class="tile"><i class="fas fa-graduation-cap"></i><h2>Schulung</h2></a>
+    <a href="/WMS/Feedback" class="tile"><i class="fas fa-comment-dots"></i><h2>Feedback</h2></a>
+  </main>
+
+  <footer>
+    &copy; 2025 WMS Projektteam – Alle Rechte vorbehalten
+  </footer>
+</body>
+</html>
